@@ -1,0 +1,247 @@
+# Butterfly Theme Configuration
+# Docs: https://butterfly.js.org/posts/21cfbf15/
+
+# ---------- Site Verification ----------
+# google_site_verification:
+# bing_site_verification:
+# baidu_site_verification:
+
+# ---------- Navigation ----------
+nav:
+  logo: # 导航栏Logo文字（留空用标题）
+  display_title: true
+  fixed: true # 导航栏固定顶部
+
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  笔记: /notes/ || fas fa-book
+  关于: /about/ || fas fa-heart
+
+# ---------- Code Highlight ----------
+highlight_theme: mac # darker / pale night / light / ocean / mac / mac light
+highlight_copy: true
+highlight_lang: true
+highlight_shrink: false
+highlight_height_limit: 350
+
+code_word_wrap: false
+
+# ---------- Social Icons ----------
+social:
+  fab fa-github: https://github.com/Elohim000 || GitHub
+  fas fa-envelope: mailto:1933463088@qq.com || Email
+
+# ---------- Avatar ----------
+avatar:
+  img: # 头像图片URL，留空用默认配置
+  effect: true # 旋转特效
+
+# ---------- Disable Footer Banner ----------
+disable_top_img: false
+
+# ---------- Index Page ----------
+index_top_img_height: 400px
+index_site_info_top: 主标题将被JS打字机覆盖
+
+# ---------- Top Image for Pages ----------
+default_top_img: # 默认顶部大图，留空使用主题默认渐变
+
+# ---------- Post Settings ----------
+post_meta:
+  page:
+    date_type: both # created / updated / both
+    date_format: date # date / relative
+    categories: true
+    tags: true
+    label: true
+  post:
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+post_copyright:
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# Post QR Code
+qrcode:
+  enable: false
+
+# Post Edit link
+post_edit:
+  enable: false
+
+# Post navigation (prev/next)
+post_pagination: 2 # 1: left/right, 2: top/bottom
+
+# ---------- TOC (Table of Contents) ----------
+toc:
+  post: true
+  page: true
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+# ---------- Sponsor ----------
+sponsor:
+  enable: false
+
+# ---------- Footer ----------
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: 学无止境，日拱一卒。
+  copyright: true
+
+# ---------- Sidebar ----------
+sidebar:
+  position: right # left / right
+  display: post # post / always / hide / remove
+  padding: 18px
+  offset: 12px
+
+# ---------- Widgets (小组件) ----------
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 终身学习者 / 编程爱好者
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/Elohim000
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的个人网站！这里记录了我的学习笔记与思考。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+    sort_order:
+  card_newest_comments:
+    enable: false
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+    sort_order:
+  card_tags:
+    enable: true
+    limit: 40
+    expand: false
+    sort_order: name
+  card_archives:
+    enable: true
+    type: monthly
+    format: MMMM YYYY
+    order: -1
+    limit: 8
+    sort_order:
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    sort_order:
+  card_post_series:
+    enable: false
+
+# ---------- Clock Widget ----------
+clock:
+  enable: true
+  animal: true
+  showText: true
+
+# ---------- Local Search ----------
+local_search:
+  enable: true
+  preload: false
+  top_n_per_article: 1
+  unescape: false
+  CDN:
+
+# ---------- Beautify (花哨特效) ----------
+# Loading animation
+preloader:
+  enable: true
+  source: 1 # 1: pace.js progress bar, 2: loading screen with % counter
+
+# Background effects
+canvas_ribbon:
+  enable: true
+  size: 100
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false
+
+# Subtitle typewriter effect
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+    strings:
+      - 学而时习之，不亦说乎
+      - 学无止境，日拱一卒
+      - 温故而知新，可以为师矣
+    typeSpeed: 80
+    backSpeed: 50
+    startDelay: 500
+    backDelay: 3000
+    loop: true
+    showCursor: true
+    cursorChar: '|'
+
+# ---------- Dark Mode ----------
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 2
+  start: # 6pm to 6am dark
+  end:
+
+# ---------- Lightbox (图片灯箱) ----------
+fancybox: true
+
+# ---------- Pjax (无刷新加载) ----------
+pjax:
+  enable: false
+
+# ---------- Snackbar (右下角通知) ----------
+snackbar:
+  enable: true
+  position: bottom-right
+  bg_light: '#49b1f5'
+  bg_dark: '#1f1f1f'
+
+# ---------- Other Plugins ----------
+# Word count / Reading time
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+
+# ---------- Inject custom CSS/JS ----------
+inject:
+  head:
+  bottom:
+
+# ---------- CDN ----------
+# Use local files instead of CDN (more reliable in China)
+CDN:
+  option: local
