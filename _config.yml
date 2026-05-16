@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Elysian Reverie
-subtitle: 学而时习之，不亦说乎
+title: Elohim的小屋
+subtitle: '即使没有太阳，我的心中依旧天光乍现。'
 description: 个人学习笔记与文章分享
 keywords: 技术,笔记,学习,编程
 author: Elohim000
@@ -28,6 +28,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "js/**"
 
 # Writing
 new_post_name: :title.md

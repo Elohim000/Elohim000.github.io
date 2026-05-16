@@ -36,18 +36,19 @@ social:
 
 # ---------- Avatar ----------
 avatar:
-  img: # 头像图片URL，留空用默认配置
+  img: /img/touxiang.jpg
   effect: true # 旋转特效
 
 # ---------- Disable Footer Banner ----------
 disable_top_img: false
 
 # ---------- Index Page ----------
-index_top_img_height: 400px
-index_site_info_top: 主标题将被JS打字机覆盖
+index_top_img: /img/bejing1.jpg
+index_top_img_height: 100vh
+index_site_info_top: Elohim的小屋
 
 # ---------- Top Image for Pages ----------
-default_top_img: # 默认顶部大图，留空使用主题默认渐变
+default_top_img: /img/bejing1.jpg
 
 # ---------- Post Settings ----------
 post_meta:
@@ -129,7 +130,7 @@ aside:
       link: https://github.com/Elohim000
   card_announcement:
     enable: true
-    content: 欢迎来到我的个人网站！这里记录了我的学习笔记与思考。
+    content: 欢迎来到我的个人网站，这里记录了我无聊的大三生活
   card_recent_post:
     enable: true
     limit: 5
@@ -196,9 +197,8 @@ subtitle:
   effect: true
   typed_option:
     strings:
-      - 学而时习之，不亦说乎
-      - 学无止境，日拱一卒
-      - 温故而知新，可以为师矣
+      - 即使没有太阳，我的心中依旧天光乍现。
+      - 卷，都卷，卷点好啊/(ㄒoㄒ)/~~
     typeSpeed: 80
     backSpeed: 50
     startDelay: 500
@@ -239,6 +239,7 @@ wordcount:
 # ---------- Inject custom CSS/JS ----------
 inject:
   head:
+    - '<script src="/js/typed.umd.js"></script>'
   bottom:
 
 # ---------- CDN ----------
