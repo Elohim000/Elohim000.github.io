@@ -191,29 +191,17 @@ canvas_ribbon:
   zIndex: -1
   click_to_change: false
 
-# Subtitle typewriter effect
+# Subtitle typewriter effect — disabled in favor of custom inject
 subtitle:
   enable: true
-  effect: true
+  effect: false
   typed_option:
-    strings:
-      - 即使没有太阳，我的心中依旧天光乍现。
-      - 卷，都卷，卷点好啊/(ㄒoㄒ)/~~
-    typeSpeed: 80
-    backSpeed: 50
-    startDelay: 500
-    backDelay: 3000
-    loop: true
-    showCursor: true
-    cursorChar: '|'
 
 # ---------- Dark Mode ----------
 darkmode:
-  enable: true
-  button: true
-  autoChangeMode: 2
-  start: # 6pm to 6am dark
-  end:
+  enable: false
+  button: false
+  autoChangeMode: false
 
 # ---------- Lightbox (图片灯箱) ----------
 fancybox: true
@@ -241,6 +229,23 @@ inject:
   head:
     - '<script src="/js/typed.umd.js"></script>'
   bottom:
+    - |
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var el = document.getElementById('subtitle');
+        if (!el || typeof Typed === 'undefined') return;
+        new Typed('#subtitle', {
+          strings: ['即使没有太阳，我的心中依旧天光乍现。', '卷，都卷，卷点好啊/(ㄒoㄒ)/~~'],
+          typeSpeed: 80,
+          backSpeed: 50,
+          startDelay: 500,
+          backDelay: 3000,
+          loop: true,
+          showCursor: true,
+          cursorChar: '|'
+        });
+      });
+      </script>
 
 # ---------- CDN ----------
 # Use local files instead of CDN (more reliable in China)
