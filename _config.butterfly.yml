@@ -228,6 +228,13 @@ wordcount:
 inject:
   head:
     - '<script src="/js/typed.umd.js"></script>'
+    - |
+      <style>
+      #page-header #site-info {
+        top: 50% !important;
+        transform: translateY(-50%);
+      }
+      </style>
   bottom:
     - |
       <script>
@@ -236,8 +243,8 @@ inject:
         if (!el || typeof Typed === 'undefined') return;
         new Typed('#subtitle', {
           strings: ['即使没有太阳，我的心中依旧天光乍现。', '卷，都卷，卷点好啊/(ㄒoㄒ)/~~'],
-          typeSpeed: 80,
-          backSpeed: 50,
+          typeSpeed: 120,
+          backSpeed: 80,
           startDelay: 500,
           backDelay: 3000,
           loop: true,
