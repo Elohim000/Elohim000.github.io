@@ -13,5 +13,9 @@ photos:
 
 
 
-[点击此处下载：运控思维导图pdf版](/files/运控.pdf)
+---
+
+  ## 下载
+
+  <a href="/files/运控.pdf" download>点击下载运控思维导图pdf版</a>
 
