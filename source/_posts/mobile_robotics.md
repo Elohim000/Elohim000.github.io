@@ -1,7 +1,7 @@
 ---
 title: 移动机器人复习思维导图
 date: 2026-05-18
-updated: 2026-05-18
+updated: 2026-05-19
 categories: 笔记
 tags:
   - 笔记
@@ -38,7 +38,7 @@ mathjax: true
   - 髋部弯曲角：$\varphi$
   - 膝盖弯曲角：$\psi$
 
-<img src="../img/mobile_robotics/leg_joint_angles.png" alt="腿部关节角示意" width="40%">
+<img src="/img/mobile_robotics/leg_joint_angles.png" alt="腿部关节角示意" width="40%">
 
 ### 步态
 
@@ -77,11 +77,12 @@ $$
 | 球形轮 | 理论上全向，但悬挂和驱动实现复杂 | 工程上难度较高 |
 
 <center class="half">
-<img src="../img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" width="15%">
-<img src="../img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" width="15%">
-<img src="../img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" width="15%">
-<img src="../img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" width="15%">
+<img src="/img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" width="15%">
+<img src="/img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" width="15%">
+<img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" width="15%">
+<img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" width="15%">
 </center>
+
 
 
 **复习要点**：
@@ -96,7 +97,7 @@ $$
 
 ### 位姿与速度表示
 
-<img src="../img/mobile_robotics/wheel_kinematics_coordinates.png" alt="两个参考系示意图" width="30%">
+<img src="/img/mobile_robotics/wheel_kinematics_coordinates.png" alt="两个参考系示意图" width="30%">
 
 在任意惯性系中，机器人位姿可表示为：
 
@@ -168,7 +169,7 @@ $$
 
 - 航向角速度为 $\dot{\theta}$。
 
-  <img src="../img/mobile_robotics/wheel_constraint_matrix.png" alt="差动驱动示意图" width="30%">
+  <img src="/img/mobile_robotics/wheel_constraint_matrix.png" alt="差动驱动示意图" width="30%">
 
 轮速与车体速度关系：
 
@@ -254,7 +255,7 @@ $$
 - 不包括仅为改变自身方向而存在的自由旋转脚轮。
 - 等于可独立控制转向角的转向轮数量；无动力的随动轮不计入。
 
-<img src="../img/mobile_robotics/velocity_space_avoidance.png" alt="机动性示意" width="50%">
+<img src="/img/mobile_robotics/velocity_space_avoidance.png" alt="机动性示意" width="50%">
 
 **复习要点**：
 
@@ -304,9 +305,9 @@ $$
 
 ## 传感器分类
 
-<img src="../img/mobile_robotics/leg_gait_table_1.png" alt="常见传感器分类" width="50%">
+<img src="/img/mobile_robotics/leg_gait_table_1.png" alt="常见传感器分类" width="50%">
 
-<img src="../img/mobile_robotics/leg_gait_table_2.png" alt="常见传感器分类" width="50%">
+<img src="/img/mobile_robotics/leg_gait_table_2.png" alt="常见传感器分类" width="50%">
 
 ### 本体感受传感器
 
@@ -417,7 +418,7 @@ $$
 z=\frac{bf}{x_l-x_r}=\frac{bf}{d}
 $$
 
-<img src="../img/mobile_robotics/stereo_ideal_geometry.png" alt="双目几何与视差公式" width="50%">
+<img src="/img/mobile_robotics/stereo_ideal_geometry.png" alt="双目几何与视差公式" width="50%">
 
 坐标关系可整理为：
 
@@ -735,7 +736,7 @@ $$
 
 控制思路：设置机器人速度 $(v_x,v_y)$ 与势场力 $F(q)$ 成正比，使势场力驱动机器人向目标运行。
 
-<img src="../img/mobile_robotics/potential_field_problems.png" alt="势场法局部极小问题" width="50%">
+<img src="/img/mobile_robotics/potential_field_problems.png" alt="势场法局部极小问题" width="50%">
 
 ### Dijkstra 与 A\*
 
