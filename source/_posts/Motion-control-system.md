@@ -196,7 +196,7 @@ $$
 
 
 $$
-\alpha=\dfrac{KU_n^{*}}{(n+\Delta n_{cl})(1+K)}\text{(精确计算)} \quad \alpha=\dfrac{U_n^{*}}{n}\text{(近似计算)}
+\alpha=\dfrac{KU_n^{\*}}{(n+\Delta n_{cl})(1+K)}\text{(精确计算)} \quad \alpha=\dfrac{U_n^{\*}}{n}\text{(近似计算)}
 $$
 
 开环速降为：
