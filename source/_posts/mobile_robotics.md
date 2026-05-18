@@ -108,19 +108,19 @@ $$
 机器人在惯性系下的速度：
 
 $$
-\dot{\xi}\sb{I} = \begin{bmatrix}\dot{x} & \dot{y} & \dot{\theta}\end{bmatrix}^{T}
+\dot{\xi}_{I} = \begin{bmatrix}\dot{x} & \dot{y} & \dot{\theta}\end{bmatrix}^{T}
 $$
 
 机器人相对本体坐标系的速度：
 
 $$
-\dot{\xi}\sb{R} = \begin{bmatrix}v\sb{x_R} & v\sb{y_R} & \dot{\theta}\end{bmatrix}^{T}
+\dot{\xi}_{R} = \begin{bmatrix}v_{x_R} & v_{y_R} & \dot{\theta}\end{bmatrix}^{T}
 $$
 
 惯性系速度与本体系速度之间的映射：
 
 $$
-\dot{\xi}\sb{R} = R(\theta)\dot{\xi}\sb{I}
+\dot{\xi}_{R} = R(\theta)\dot{\xi}_{I}
 $$
 
 其中：
@@ -137,7 +137,7 @@ $$
 因此：
 
 $$
-\dot{\xi}\sb{I} = R^{-1}(\theta)\dot{\xi}\sb{R}
+\dot{\xi}_{I} = R^{-1}(\theta)\dot{\xi}_{R}
 $$
 
 且：
@@ -163,7 +163,7 @@ $$
 
 - 轮距为 $2l$；
 
-- 左右轮角速度为 $\dot{\varphi}\sb{1},\dot{\varphi}\sb{2}$；
+- 左右轮角速度为 $\dot{\varphi}_{1},\dot{\varphi}_{2}$；
 
 - 车体线速度为 $v$；
 
@@ -175,8 +175,8 @@ $$
 
 $$
 \begin{aligned}
-r\dot{\varphi}\sb{1} &= v+l\dot{\theta}\\
-r\dot{\varphi}\sb{2} &= v-l\dot{\theta}
+r\dot{\varphi}_{1} &= v+l\dot{\theta}\\
+r\dot{\varphi}_{2} &= v-l\dot{\theta}
 \end{aligned}
 $$
 
@@ -184,32 +184,32 @@ $$
 
 $$
 \begin{aligned}
-v &= \frac{r(\dot{\varphi}\sb{1}+\dot{\varphi}\sb{2})}{2}\\
-\dot{\theta} &= \frac{r(\dot{\varphi}\sb{1}-\dot{\varphi}\sb{2})}{2l}
+v &= \frac{r(\dot{\varphi}_{1}+\dot{\varphi}_{2})}{2}\\
+\dot{\theta} &= \frac{r(\dot{\varphi}_{1}-\dot{\varphi}_{2})}{2l}
 \end{aligned}
 $$
 
 得到轮子转速与本体坐标系速度关系：
 
 $$
-\dot{\xi}\sb{R}=
+\dot{\xi}_{R}=
 \begin{bmatrix}
-v\sb{x_R}\\
-v\sb{y_R}\\
+v_{x_R}\\
+v_{y_R}\\
 \dot{\theta}
 \end{bmatrix}
 =
 \begin{bmatrix}
-\dfrac{r}{2}(\dot{\varphi}\sb{1}+\dot{\varphi}\sb{2})\\
+\dfrac{r}{2}(\dot{\varphi}_{1}+\dot{\varphi}_{2})\\
 0\\
-\dfrac{r}{2l}(\dot{\varphi}\sb{1}-\dot{\varphi}\sb{2})
+\dfrac{r}{2l}(\dot{\varphi}_{1}-\dot{\varphi}_{2})
 \end{bmatrix}
 $$
 
 再由坐标变换得到惯性系速度：
 
 $$
-\dot{\xi}\sb{I}=R^{-1}(\theta)\dot{\xi}\sb{R}
+\dot{\xi}_{I}=R^{-1}(\theta)\dot{\xi}_{R}
 $$
 
 **复习要点**：
@@ -431,27 +431,27 @@ $$
 一般情况下，左右相机坐标系之间存在旋转和平移：
 
 $$
-r'\sb{r} = Rr'\sb{l}+r_0
+r'_{r} = Rr'_{l}+r_0
 $$
 
 矩阵形式：
 
 $$
 \begin{bmatrix}
-x'\sb{r}\\y'\sb{r}\\z'\sb{r}
+x'_{r}\\y'_{r}\\z'_{r}
 \end{bmatrix}
 =
 \begin{bmatrix}
-r\sb{11}&r\sb{12}&r\sb{13}\\
-r\sb{21}&r\sb{22}&r\sb{23}\\
-r\sb{31}&r\sb{32}&r\sb{33}
+r_{11}&r_{12}&r_{13}\\
+r_{21}&r_{22}&r_{23}\\
+r_{31}&r_{32}&r_{33}
 \end{bmatrix}
 \begin{bmatrix}
-x'\sb{l}\\y'\sb{l}\\z'\sb{l}
+x'_{l}\\y'_{l}\\z'_{l}
 \end{bmatrix}
 +
 \begin{bmatrix}
-r\sb{01}\\r\sb{02}\\r\sb{03}
+r_{01}\\r_{02}\\r_{03}
 \end{bmatrix}
 $$
 
@@ -647,7 +647,7 @@ $$
 标准形式：
 
 $$
-\bar{p}\sb{t}(l)=\sum\sb{l'}p(l\mid l',u_t)p\sb{t-1}(l')
+\bar{p}_{t}(l)=\sum_{l'}p(l\mid l',u_t)p_{t-1}(l')
 $$
 
 其中：
@@ -662,13 +662,13 @@ $$
 感知更新用于根据传感器观测修正位置概率。
 
 $$
-p_t(l)=\eta p(i_t\mid l)\bar{p}\sb{t}(l)
+p_t(l)=\eta p(i_t\mid l)\bar{p}_{t}(l)
 $$
 
 等价写成归一化形式：
 
 $$
-p_t(l)=\frac{p(i_t\mid l)\bar{p}\sb{t}(l)}{p(i_t)},\qquad l=1,\dots,L
+p_t(l)=\frac{p(i_t\mid l)\bar{p}_{t}(l)}{p(i_t)},\qquad l=1,\dots,L
 $$
 
 其中：
@@ -715,13 +715,13 @@ $$
 总势场：
 
 $$
-U(q)=U\sb{att}(q)+U\sb{rep}(q)
+U(q)=U_{att}(q)+U_{rep}(q)
 $$
 
 势场力函数：
 
 $$
-F(q)=-\nabla U(q)=-\nabla U\sb{att}(q)-\nabla U\sb{rep}(q)
+F(q)=-\nabla U(q)=-\nabla U_{att}(q)-\nabla U_{rep}(q)
 $$
 
 若在平面上：

@@ -259,7 +259,7 @@ $$
 堵转电流为：
 
 $$
-I_{dbl}=\frac{U_n^\*+U_{com}}{R_s}
+I_{dbl}=\frac{U_n^*+U_{com}}{R_s}
 $$
 
 常用经验范围为：
@@ -277,13 +277,13 @@ $$
 当 $I_d\le I_{dcr}$ 时，电流截止负反馈未投入：
 
 $$
-n=\frac{K_pK_sU_n^\*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
+n=\frac{K_pK_sU_n^*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
 $$
 
 当 $I_d>I_{dcr}$ 时，电流截止负反馈投入：
 
 $$
-n=\frac{K_pK_s(U_n^\*+U_{com})}{C_e(1+K)}-
+n=\frac{K_pK_s(U_n^*+U_{com})}{C_e(1+K)}-
 \frac{(K_pK_sR_s+R)I_d}{C_e(1+K)}
 $$
 
@@ -637,7 +637,7 @@ $$
 
 $$
 \sigma_n=2\left(\frac{\Delta C_{max}}{C_b}\right)(\lambda-z)
-\frac{\Delta n_NT_{\Sigma n}}{n^\*T_m}
+\frac{\Delta n_NT_{\Sigma n}}{n^*T_m}
 $$
 
 其中额定速降为：
@@ -959,7 +959,7 @@ I_{dcr}=\frac{U_{com}}{R_s}
 $$
 
 $$
-I_{dbl}=\frac{U_n^\*+U_{com}}{R_s}
+I_{dbl}=\frac{U_n^*+U_{com}}{R_s}
 $$
 
 $$
@@ -1036,7 +1036,7 @@ $$
 
 $$
 \sigma_n=2\left(\frac{\Delta C_{max}}{C_b}\right)(\lambda-z)
-\frac{\Delta n_NT_{\Sigma n}}{n^\*T_m}
+\frac{\Delta n_NT_{\Sigma n}}{n^*T_m}
 $$
 
 ## 交流调速
