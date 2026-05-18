@@ -87,6 +87,11 @@ ignore:
 # Extensions
 theme: butterfly
 
+# MathJax LaTeX support
+mathjax:
+  enable: true
+  every_page: false
+
 # Deployment
 deploy:
   type: ''

@@ -7,6 +7,8 @@ tags:
   - 笔记
   - 运控
 description: 分享我复习时做的运动控制系统思维导图。
+cover: /img/Motion-control-system/运控.png
+mathjax: true
 photos:
   -
 ---
@@ -51,15 +53,15 @@ $$
 
 ---
 
-# 1. 直流部分
+# 直流部分
 
-## 1.1 V-M 系统
+## V-M 系统
 
 V-M 系统指**晶闸管可控整流器—直流电动机调速系统**。它的核心思路是：通过改变晶闸管触发角 $\alpha$，改变整流输出电压 $U_d$，再改变直流电动机电枢电压，从而调节电机转速。
 
-![V-M 系统主电路](/img/Motion-control-system/extracted/img_01.png)
+<img src="/img/Motion-control-system/extracted/img_01.png" alt="V-M 系统主电路" style="width:67%;">
 
-### 1.1.1 可控整流输出电压
+### 可控整流输出电压
 
  V-M 系统主电路公式为：
 
@@ -75,11 +77,11 @@ $$
 
 复习时只要记住：**增大触发角 $\alpha$，$\cos\alpha$ 减小，所以输出电压 $U_d$ 减小，电机转速降低。**
 
-### 1.1.2 V-M 系统机械特性
+### V-M 系统机械特性
 
-![V-M 系统机械特性](/img/Motion-control-system/extracted/img_02.png)
+<img src="/img/Motion-control-system/extracted/img_02.png" alt="V-M 系统机械特性" style="width:67%;">
 
-### 1.1.3 V-M 系统动态结构
+### V-M 系统动态结构
 
 晶闸管触发和整流装置存在滞后，准确表达可写成带纯滞后的比例环节：
 
@@ -93,19 +95,19 @@ $$
 W_s(s)\approx \frac{K_s}{T_ss+1}
 $$
 
-![晶闸管触发与整流装置动态结构](/img/Motion-control-system/extracted/img_03.png)
+<img src="/img/Motion-control-system/extracted/img_03.png" alt="晶闸管触发与整流装置动态结构" style="width:67%;">
 
 常见整流电路的平均失控时间如下图所示，复习时主要用它来确定 $T_s$。
 
-![各种整流电路失控时间](/img/Motion-control-system/extracted/img_04.png)
+<img src="/img/Motion-control-system/extracted/img_04.png" alt="各种整流电路失控时间" style="width:67%;">
 
 ---
 
-## 1.2 转速开环控制的直流调速系统
+## 转速开环控制的直流调速系统
 
 转速开环控制没有测速反馈，系统只根据给定信号改变电枢电压，不能自动修正负载扰动、电网波动和参数变化带来的速度误差。
 
-### 1.2.1 开环调速方式
+### 开环调速方式
 
 转速开环控制的调速方式为：
 
@@ -113,7 +115,7 @@ $$
 2. **弱磁调速**：减小磁通 $\Phi$，常用于基速以上；
 3. **电枢回路串电阻调速**：增大 $R$，机械特性变软，效率低。
 
-### 1.2.2 机械特性
+### 机械特性
 
 直流电动机电枢电压平衡方程为：
 
@@ -140,11 +142,11 @@ $$
 
 ---
 
-## 1.3 转速闭环控制的直流调速系统
+## 转速闭环控制的直流调速系统
 
 转速闭环系统加入测速反馈，把实际转速 $n$ 转换成反馈电压 $U_n$，与给定电压 $U_n^*$ 比较后形成偏差信号，再通过放大器和整流装置控制电枢电压。
 
-### 1.3.1 调速指标
+### 调速指标
 
 直流调速系统的调速指标主要包括**调速范围**和**静差率**。
 
@@ -170,9 +172,9 @@ $$
 
 **复习理解：**开环系统的 $\Delta n$ 往往较大，所以在给定 $D$ 和 $s$ 时，单靠开环通常难以满足调速精度，需要引入闭环反馈。
 
-### 1.3.2 稳态结构
+### 稳态结构
 
-![转速负反馈闭环直流调速系统稳态结构](/img/Motion-control-system/extracted/img_05.png)
+<img src="/img/Motion-control-system/extracted/img_05.png" alt="转速负反馈闭环直流调速系统稳态结构" style="width:67%;">
 
 闭环静特性整理为：
 
@@ -211,9 +213,9 @@ $$
 
 **结论：**转速负反馈的主要作用是把静态速降压缩为开环的 $1/(1+K)$，从而提高静态调速精度。
 
-### 1.3.3 动态结构与稳定条件
+### 动态结构与稳定条件
 
-![转速负反馈闭环直流调速系统动态结构](/img/Motion-control-system/extracted/img_06.png)
+<img src="/img/Motion-control-system/extracted/img_06.png" alt="转速负反馈闭环直流调速系统动态结构" style="width:67%;">
 
 动态结构中需要考虑：
 
@@ -242,13 +244,13 @@ $$
 
 因此闭环调速不是无限增大放大倍数，而是要在**稳态精度**和**动态稳定性**之间折中。
 
-### 1.3.4 电流截止负反馈
+### 电流截止负反馈
 
 电流截止负反馈用于限制过大的电枢电流。正常负载范围内它不动作；当电流超过截止电流时，它投入工作，使系统静特性变陡，从而限制电流。
 
-![带电流截止负反馈的闭环直流调速系统](/img/Motion-control-system/extracted/img_07.png)
+<img src="/img/Motion-control-system/extracted/img_07.png" alt="带电流截止负反馈的闭环直流调速系统" style="width:67%;">
 
-![电流截止负反馈静特性](/img/Motion-control-system/extracted/img_08.png)
+<img src="/img/Motion-control-system/extracted/img_08.png" alt="电流截止负反馈静特性" style="width:67%;">
 
 截止电流为：
 
@@ -291,7 +293,7 @@ $$
 
 ---
 
-## 1.4 转速、电流双闭环直流调速系统
+## 转速、电流双闭环直流调速系统
 
 双闭环系统由**转速外环**和**电流内环**组成。复习时要抓住一句话：
 
@@ -301,9 +303,9 @@ $$
 
 也就是说，转速环根据速度误差决定“需要多大电流”，电流环再快速控制电枢电流达到这个给定值。
 
-### 1.4.1 稳态结构
+### 稳态结构
 
-![双闭环直流调速系统稳态结构](/img/Motion-control-system/extracted/img_09.png)
+<img src="/img/Motion-control-system/extracted/img_09.png" alt="双闭环直流调速系统稳态结构" style="width:67%;">
 
 主要环节包括：
 
@@ -315,9 +317,9 @@ $$
 - $R$：电枢回路总电阻；
 - $C_e$：电动势系数。
 
-### 1.4.2 动态结构
+### 动态结构
 
-![双闭环直流调速系统动态结构](/img/Motion-control-system/extracted/img_10.png)
+<img src="/img/Motion-control-system/extracted/img_10.png" alt="双闭环直流调速系统动态结构" style="width:67%;">
 
 ASR 与 ACR 常采用 PI 调节器。调节器形式为：
 
@@ -329,7 +331,7 @@ $$
 W_{ACR}(s)=K_i\frac{\tau_is+1}{\tau_is}
 $$
 
-### 1.4.3 双闭环系统的启动过程
+### 双闭环系统的启动过程
 
 双闭环直流调速系统启动时一般经历三个阶段：
 
@@ -341,15 +343,15 @@ $$
 
 ---
 
-## 1.5 系统校正
+## 系统校正
 
 系统校正的目的，是通过选择调节器结构和参数，把控制系统校正成典型系统，使它满足超调量、调节时间、抗扰性能等指标。
 
-## 1.5.1 典型 I 型系统
+## 典型 I 型系统
 
 典型 I 型系统结构为：
 
-![典型 I 型系统](/img/Motion-control-system/extracted/img_12.png)
+<img src="/img/Motion-control-system/extracted/img_12.png" alt="典型 I 型系统" style="width:67%;">
 
 其闭环特征参数为：
 
@@ -363,9 +365,9 @@ $$
 
 所以 $KT$ 越大，系统速度越快，但阻尼比下降，超调量增大。
 
-### 1.5.1.1 典型 I 型系统性能表
+### 典型 I 型系统性能表
 
-![典型 I 型系统动态性能表](/img/Motion-control-system/extracted/img_13.png)
+<img src="/img/Motion-control-system/extracted/img_13.png" alt="典型 I 型系统动态性能表" style="width:67%;">
 
 常用选择：如果希望超调量较小，常取：
 
@@ -379,17 +381,17 @@ $$
 \xi=0.707,\qquad \sigma\approx4.3\%
 $$
 
-### 1.5.1.2 校正为典型 I 型系统的调节器选择
+### 校正为典型 I 型系统的调节器选择
 
-![校正为典型 I 型系统的调节器选择](/img/Motion-control-system/extracted/img_14.png)
+<img src="/img/Motion-control-system/extracted/img_14.png" alt="校正为典型 I 型系统的调节器选择" style="width:67%;">
 
 复习时只要抓住：如果控制对象本身缺少积分环节，就要通过调节器引入积分；如果对象中有大惯性环节，常用 PI 调节器的零点去抵消对象中的一个惯性环节。
 
-## 1.5.2 典型 II 型系统
+## 典型 II 型系统
 
 典型 II 型系统结构为：
 
-![典型 II 型系统](/img/Motion-control-system/extracted/img_15.png)
+<img src="/img/Motion-control-system/extracted/img_15.png" alt="典型 II 型系统" style="width:67%;">
 
 引入中频宽参数：
 
@@ -406,17 +408,17 @@ $$
 
 典型 II 型系统相比典型 I 型系统多一个积分环节，因此稳态精度更高，但设计时要特别注意超调量。
 
-### 1.5.2.1 典型 II 型系统阶跃跟随性能
+### 典型 II 型系统阶跃跟随性能
 
-![典型 II 型系统阶跃输入跟随性能表](/img/Motion-control-system/extracted/img_16.png)
+<img src="/img/Motion-control-system/extracted/img_16.png" alt="典型 II 型系统阶跃输入跟随性能表" style="width:67%;">
 
-### 1.5.2.2 典型 II 型系统抗扰性能
+### 典型 II 型系统抗扰性能
 
-![典型 II 型系统抗扰性能表](/img/Motion-control-system/extracted/img_17.png)
+<img src="/img/Motion-control-system/extracted/img_17.png" alt="典型 II 型系统抗扰性能表" style="width:67%;">
 
-### 1.5.2.3 校正为典型 II 型系统的调节器选择
+### 校正为典型 II 型系统的调节器选择
 
-![校正为典型 II 型系统的调节器选择](/img/Motion-control-system/extracted/img_18.png)
+<img src="/img/Motion-control-system/extracted/img_18.png" alt="校正为典型 II 型系统的调节器选择" style="width:67%;">
 
 复习时常见套路：
 
@@ -426,9 +428,9 @@ $$
 \text{校正成典型 II 型系统}
 $$
 
-## 1.5.3 传递函数近似
+## 传递函数近似
 
-### 1.5.3.1 高频段小惯性近似
+### 高频段小惯性近似
 
 两个小惯性环节串联时，可近似合并为一个惯性环节：
 
@@ -443,7 +445,7 @@ $$
 \omega_c\le \frac{1}{3\sqrt{T_2T_3}}
 $$
 
-### 1.5.3.2 高阶系统降阶近似
+### 高阶系统降阶近似
 
 高阶系统可在一定条件下降阶：
 
@@ -457,7 +459,7 @@ $$
 \omega_c\le\frac{1}{3}\min\left(\sqrt{\frac{1}{b}},\sqrt[3]{\frac{1}{a}}\right)
 $$
 
-### 1.5.3.3 低频段大惯性近似
+### 低频段大惯性近似
 
 大惯性环节在低频段可近似为积分环节：
 
@@ -473,7 +475,7 @@ $$
 
 ---
 
-## 1.6 工程设计双闭环系统调节器
+## 工程设计双闭环系统调节器
 
 工程设计双闭环系统时，应先设计电流内环，再设计转速外环：
 
@@ -483,7 +485,7 @@ $$
 
 从双闭环动态结构中分离出电流环：
 
-![电流环位置](/img/Motion-control-system/extracted/img_22.png)
+<img src="/img/Motion-control-system/extracted/img_22.png" alt="电流环位置" style="width:67%;">
 
 电流反馈滤波和转速反馈滤波时间常数为：
 
@@ -495,11 +497,11 @@ $$
 T_{0n}:\text{转速反馈滤波时间常数}
 $$
 
-###1.6.1 电流调节器设计
+### 电流调节器设计
 
 电流环等效结构为：
 
-![电流环等效结构](/img/Motion-control-system/extracted/img_24.png)
+<img src="/img/Motion-control-system/extracted/img_24.png" alt="电流环等效结构" style="width:67%;">
 
 电流调节器采用 PI 调节器：
 
@@ -533,7 +535,7 @@ $$
 
 电流调节器模拟电路参数为：
 
-![电流调节器电路](/img/Motion-control-system/extracted/img_25.png)
+<img src="/img/Motion-control-system/extracted/img_25.png" alt="电流调节器电路" style="width:67%;">
 
 $$
 K_i=\frac{R_i}{R_0}
@@ -547,7 +549,7 @@ $$
 T_{0i}=\frac{1}{4}R_0C_{0i}
 $$
 
-### 1.6.2 电流环近似条件
+### 电流环近似条件
 
 电流环的截止频率$w_c=K_I$，近似条件可整理为如下三条：
 
@@ -569,11 +571,11 @@ $$
 \omega_{ci}\le \frac{1}{3}\sqrt{\frac{1}{T_sT_{0i}}}
 $$
 
-### 1.6.3 转速调节器设计
+### 转速调节器设计
 
 电流环设计完成后，可将电流环等效为转速环中的一个小惯性环节，再设计转速外环。
 
-![转速环动态结构及其简化](/img/Motion-control-system/extracted/img_27.png)
+<img src="/img/Motion-control-system/extracted/img_27.png" alt="转速环动态结构及其简化" style="width:67%;">
 
 转速调节器采用 PI 调节器：
 
@@ -607,7 +609,7 @@ $$
 
 转速调节器模拟电路参数为：
 
-![转速调节器电路](/img/Motion-control-system/extracted/img_28.png)
+<img src="/img/Motion-control-system/extracted/img_28.png" alt="转速调节器电路" style="width:67%;">
 
 $$
 K_n=\frac{R_n}{R_0}
@@ -621,7 +623,7 @@ $$
 T_{0n}=\frac{1}{4}R_0C_{0n}
 $$
 
-### 1.6.4 转速环近似条件
+### 转速环近似条件
 
 思维导图中的转速环近似条件为：
 
@@ -633,7 +635,7 @@ $$
 \omega_{cn}\le\frac{1}{3}\sqrt{\frac{K_I}{T_{0n}}}
 $$
 
-### 1.6.5 退饱和转速超调量
+### 退饱和转速超调量
 
 退饱和转速超调量公式为：
 
@@ -656,35 +658,35 @@ $$
 
 ---
 
-# 2. 交流部分
+# 交流部分
 
-## 2.1 闭环控制的异步电动机变压调速系统
+## 闭环控制的异步电动机变压调速系统
 
 闭环控制的异步电动机变压调速系统通过改变定子电压 $U_s$ 来调节电磁转矩和转速。它和直流电动机闭环调压系统不同，异步电动机机械特性存在稳定运行区和不稳定运行区，不能无限延长。
 
-### 2.1.1 稳态模型
+### 稳态模型
 
 异步电动机稳态模型常用 T 型等效电路表示。
 
-![异步电动机稳态等效电路](/img/Motion-control-system/extracted/img_31.png)
+<img src="/img/Motion-control-system/extracted/img_31.png" alt="异步电动机稳态等效电路" style="width:67%;">
 
-### 2.1.2 机械特性
+### 机械特性
 
 改变定子电压时，异步电动机机械特性会发生变化。电压越低，最大电磁转矩越小，稳定运行范围也变窄。
 
-![异步电动机不同电压下机械特性](/img/Motion-control-system/extracted/img_32.png)
+<img src="/img/Motion-control-system/extracted/img_32.png" alt="异步电动机不同电压下机械特性" style="width:67%;">
 
-### 2.1.3 静特性
+### 静特性
 
-![闭环控制变压调速系统静特性](/img/Motion-control-system/extracted/img_33.png)
+<img src="/img/Motion-control-system/extracted/img_33.png" alt="闭环控制变压调速系统静特性" style="width:67%;">
 
 变压调速系统的特点：
 
 ​	异步电动机闭环变压调速系统不同于直流电动机闭环调压系统，其静特性左右两边都有限，不能无限延长，当负载变化使电压调节到极限值时，闭环系统失去控制能力，此时工作点只能沿着极限开环机械特性变化。
 
-### 2.1.4 动态模型
+### 动态模型
 
-![异步电动机闭环变压调速系统动态结构](/img/Motion-control-system/extracted/img_35.png)
+<img src="/img/Motion-control-system/extracted/img_35.png" alt="异步电动机闭环变压调速系统动态结构" style="width:67%;">
 
 转速调节器：
 
@@ -714,11 +716,11 @@ $$
 
 ---
 
-## 2.2 笼型异步电机变压变频调速系统
+## 笼型异步电机变压变频调速系统
 
 变压变频调速的核心是协调改变电压和频率，使气隙磁通维持在合适范围内。
 
-### 2.2.1 定子每相电动势
+### 定子每相电动势
 
 公式为：
 
@@ -738,9 +740,9 @@ $$
 
 变压变频调速系统的控制特性如下图所示，基频以下磁通不变，近似为恒转矩调速；基频以上$U_{sN}$不变，近似为恒功率调速。
 
-![变压变频调速控制特性](/img/Motion-control-system/extracted/img_37.png)
+<img src="/img/Motion-control-system/extracted/img_37.png" alt="变压变频调速控制特性" style="width:67%;">
 
-### 2.2.2 基频以下——恒压频比
+### 基频以下——恒压频比
 
 基频以下，为保持磁通近似恒定，常采用：
 
@@ -750,7 +752,7 @@ $$
 
 低频时，定子电阻压降所占比例增大，因此简单保持 $U_s/w_1$ 恒定会导致磁通下降，需要进行低频电压补偿。
 
-![恒压频比控制机械特性](/img/Motion-control-system/extracted/img_38.png)
+<img src="/img/Motion-control-system/extracted/img_38.png" alt="恒压频比控制机械特性" style="width:67%;">
 
 如果采用恒气隙电动势控制，则为：
 
@@ -758,9 +760,9 @@ $$
 \frac{E_g}{\omega_1}=\text{Const.}
 $$
 
-![恒 $E_g/\omega_1$ 控制机械特性](/img/Motion-control-system/extracted/img_39.png)
+<img src="/img/Motion-control-system/extracted/img_39.png" alt="恒 $E_g/\omega_1$ 控制机械特性" style="width:67%;">
 
-### 2.2.3 基频以上——恒压变频
+### 基频以上——恒压变频
 
 基频以上，电压不能继续升高，一般保持电压恒定并继续升高频率，磁通减小，进入弱磁或近似恒功率调速区。
 
@@ -768,21 +770,21 @@ $$
 U_s=\text{Const.},\qquad f_1>f_{1N}
 $$
 
-![基频以上恒压变频机械特性](/img/Motion-control-system/extracted/img_40.png)
+<img src="/img/Motion-control-system/extracted/img_40.png" alt="基频以上恒压变频机械特性" style="width:67%;">
 
 ---
 
-## 2.3 变频变压调速系统中的 PWM 技术与 SVPWM
+## 变频变压调速系统中的 PWM 技术与 SVPWM
 
 SVPWM 是**磁链跟踪控制技术**，基本思想是：
 
 > 把逆变器和交流电动机视为一体，按照跟踪圆形旋转磁场来控制逆变器的工作。
 
-### 2.3.1 SVPWM 的复习理解
+### SVPWM 的复习理解
 
 三相逆变器有多个开关状态，不同开关状态会产生不同的空间电压矢量。SVPWM 通过合理安排这些电压矢量的作用时间，使合成矢量尽可能逼近圆形旋转磁场。
 
-### 2.3.2 开关状态顺序原则
+### 开关状态顺序原则
 
 在实际系统中，应尽量减少开关状态变化引起的开关损耗,不同开关状态的顺序必须遵守下述原则：
 
@@ -790,7 +792,7 @@ SVPWM 是**磁链跟踪控制技术**，基本思想是：
 
 ---
 
-## 2.4 转速闭环转差频率控制的变压变频调速系统
+## 转速闭环转差频率控制的变压变频调速系统
 
 转差频率控制的关键思想是：
 
@@ -802,7 +804,7 @@ $$
 
 - 当 $T_e$ 达到最大值 $T_{emax}$ 时，转差频率达到：$\omega_s=\omega_{smax}$.
 
-![恒电流控制时 $T_e=f(\omega_s)$ 特性](/img/Motion-control-system/extracted/img_43.png)
+<img src="/img/Motion-control-system/extracted/img_43.png" alt="恒电流控制时 $T_e=f(\omega_s)$ 特性" style="width:67%;">
 
 转差频率控制的规律是：
 
@@ -815,11 +817,11 @@ $$
 U_s=f(\omega_1,I_s)
 $$
 
-![不同定子电流时的电压-频率特性](/img/Motion-control-system/extracted/img_44.png)
+<img src="/img/Motion-control-system/extracted/img_44.png" alt="不同定子电流时的电压-频率特性" style="width:67%;">
 
 ---
 
-## 2.5 电力电子变压变频器
+## 电力电子变压变频器
 
 电力电子变压变频器是交流调速系统中的功率变换环节，分为两类：
 
@@ -827,27 +829,27 @@ $$
 \text{交-直-交变压变频器}\quad\text{和}\quad\text{交-交变压变频器}
 $$
 
-### 2.5.1 交-直-交变压变频器
+### 交-直-交变压变频器
 
 交-直-交变频器先把交流电整流成直流电，再由逆变器输出电压和频率可调的交流电。
 
-![交-直-交 PWM 变压变频器](/img/Motion-control-system/extracted/img_46.png)
+<img src="/img/Motion-control-system/extracted/img_46.png" alt="交-直-交 PWM 变压变频器" style="width:67%;">
 
 交-直-交变压变频器的结构简单，稳态、动态性能较好，是现代变频调速系统中非常常见的形式。
 
-### 2.5.2 交-交变压变频器
+### 交-交变压变频器
 
 交-交变频器不经过直流中间环节，直接把一种频率的交流电变换成另一种频率的交流电。
 
-![交-交直接变压变频器](/img/Motion-control-system/extracted/img_47.png)
+<img src="/img/Motion-control-system/extracted/img_47.png" alt="交-交直接变压变频器" style="width:67%;">
 
 交-交变压变频器的输入功率因数低，最高输出频率一般不超过电网频率的 $1/3\sim1/2$，需要大量晶闸管，适合低速大容量调速场合。
 
-### 2.5.3 电压源型逆变器 VSI 与电流源型逆变器 CSI
+### 电压源型逆变器 VSI 与电流源型逆变器 CSI
 
 按交-直-交变压变频器中直流环节的电源类型可分为VSI与CSI。
 
-![电压源型与电流源型逆变器](/img/Motion-control-system/extracted/img_48.png)
+<img src="/img/Motion-control-system/extracted/img_48.png" alt="电压源型与电流源型逆变器" style="width:67%;">
 
 电压源型逆变器 VSI 的直流侧近似恒压源，通常用大电容维持直流电压：
 $$
@@ -862,11 +864,11 @@ $$
 
 两者对比：
 
-![VSI 与 CSI 对比表](/img/Motion-control-system/extracted/img_49.png)
+<img src="/img/Motion-control-system/extracted/img_49.png" alt="VSI 与 CSI 对比表" style="width:67%;">
 
 ---
 
-# 3. 数字化运动控制系统*
+# 数字化运动控制系统*
 
 思维导图中把数字化运动控制系统作为最后一个分支。可按如下链路理解：
 
@@ -888,19 +890,19 @@ $$
 
 ---
 
-# 4. 例题整理
+# 例题整理
 
-<img src="../img/Motion-control-system/extracted/img_54.png" alt="1-10" style="zoom:67%;" />
+<img src="/img/Motion-control-system/extracted/img_54.png" alt="1-10" style="zoom:67%;" />
 
-<img src="../img/Motion-control-system/extracted/img_53.png" alt="img_53" style="zoom:67%;" />
+<img src="/img/Motion-control-system/extracted/img_53.png" alt="img_53" style="zoom:67%;" />
 
-<img src="../img/Motion-control-system/extracted/img_51.png" alt="img_51" style="zoom:67%;" />
+<img src="/img/Motion-control-system/extracted/img_51.png" alt="img_51" style="zoom:67%;" />
 
-<img src="../img/Motion-control-system/extracted/img_50.png" alt="img_50" style="zoom:67%;" />
+<img src="/img/Motion-control-system/extracted/img_50.png" alt="img_50" style="zoom:67%;" />
 
-# 5. 公式速查
+# 公式速查
 
-## 5.1 直流调速基础
+## 直流调速基础
 
 $$
 U_d=E+I_dR
@@ -926,7 +928,7 @@ $$
 \Delta n=\frac{RI_d}{C_e}
 $$
 
-## 5.2 调速指标
+## 调速指标
 
 $$
 D=\frac{n_{\max}}{n_{\min}}
@@ -940,7 +942,7 @@ $$
 \Delta n_d=\frac{s}{1-s}\cdot\frac{n_N}{D}
 $$
 
-## 5.3 转速闭环
+## 转速闭环
 
 $$
 K=\frac{K_pK_s\alpha}{C_e}
@@ -954,7 +956,7 @@ $$
 K<K_{cr}=\frac{T_m(T_l+T_s)+T_s^2}{T_lT_s}
 $$
 
-## 5.4 电流截止负反馈
+## 电流截止负反馈
 
 $$
 I_{dcr}=\frac{U_{com}}{R_s}
@@ -972,7 +974,7 @@ $$
 I_{dbl}\approx(1.5\sim2)I_N
 $$
 
-## 5.5 典型系统
+## 典型系统
 
 典型 I 型：
 
@@ -996,7 +998,7 @@ h=\frac{\tau}{T},\qquad
 K=\frac{h+1}{2h^2T^2}
 $$
 
-## 5.6 双闭环工程设计
+## 双闭环工程设计
 
 电流调节器：
 
@@ -1041,7 +1043,7 @@ $$
 \frac{\Delta n_NT_{\Sigma n}}{n^*T_m}
 $$
 
-## 5.7 交流调速
+## 交流调速
 
 $$
 E_g=4.44f_1N_sk_{Ns}\Phi_m
