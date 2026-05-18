@@ -15,8 +15,6 @@ photos:
 
 # 运动控制系统思维导图
 
-![原始思维导图总览](/img/Motion-control-system/运控.png)
-
 ---
 
 ##  总体复习脉络
