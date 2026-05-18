@@ -179,7 +179,7 @@ $$
 闭环静特性整理为：
 
 $$
-n=\frac{K_pK_sU_n^{*}}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
+n=\frac{K_pK_sU_n^{\*}}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
 $$
 
 即：
@@ -196,7 +196,7 @@ $$
 
 
 $$
-\alpha=\dfrac{KU_n^{*}}{(n+\Delta n_{cl})(1+K)} \quad \alpha \approx \dfrac{U_n^{*}}{n}
+\alpha=\dfrac{KU_n^{\*}}{(n+\Delta n_{cl})(1+K)}（精确计算） \quad \alpha \approx \dfrac{U_n^{\*}}{n}（近似计算）
 $$
 
 开环速降为：
