@@ -13,13 +13,13 @@ photos:
   -
 ---
 
-# 运动控制系统思维导图整理版
+# 运动控制系统思维导图
 
 ![原始思维导图总览](/img/Motion-control-system/运控.png)
 
 ---
 
-## 0. 总体复习脉络
+##  总体复习脉络
 
 这张思维导图可以按两条主线复习。
 
@@ -79,7 +79,7 @@ $$
 
 ### V-M 系统机械特性
 
-<img src="/img/Motion-control-system/extracted/img_02.png" alt="V-M 系统机械特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_02.png" alt="V-M 系统机械特性" style="width:40%;">
 
 ### V-M 系统动态结构
 
@@ -164,13 +164,13 @@ $$
 
 一般给出的$s$为静差率上限，即$n_0=n_{min}+\Delta n_N$，则可推导出如下三个常用公式：
 $$
-s=\dfrac{D\Delta n_N}{n_N+D\Delta n_N}\\\\
-n_{min}=\dfrac{(1-s)\Delta n_N}{s}\\\\
+s=\dfrac{D\Delta n_N}{n_N+D\Delta n_N}\qquad
+n_{min}=\dfrac{(1-s)\Delta n_N}{s}\qquad
 D=\dfrac{n_N s}{\Delta n_N(1-s)}
 $$
 其中最常用的是第三个公式，用于计算闭环系统的额定速降。
 
-**复习理解：**开环系统的 $\Delta n$ 往往较大，所以在给定 $D$ 和 $s$ 时，单靠开环通常难以满足调速精度，需要引入闭环反馈。
+**复习理解**：开环系统的 $\Delta n$ 往往较大，所以在给定 $D$ 和 $s$ 时，单靠开环通常难以满足调速精度，需要引入闭环反馈。
 
 ### 稳态结构
 
@@ -196,7 +196,7 @@ $$
 
 
 $$
-\alpha=\dfrac{KU_n^*}{(n+\Delta n_{cl})(1+K)}(精确计算) \quad \alpha=\dfrac{U_n^*}{n}(近似计算)
+\alpha=\dfrac{KU_n^*}{(n+\Delta n_{cl})(1+K)}\text{(精确计算)} \quad \alpha=\dfrac{U_n^*}{n}\text{(近似计算)}
 $$
 
 开环速降为：
@@ -248,9 +248,9 @@ $$
 
 电流截止负反馈用于限制过大的电枢电流。正常负载范围内它不动作；当电流超过截止电流时，它投入工作，使系统静特性变陡，从而限制电流。
 
-<img src="/img/Motion-control-system/extracted/img_07.png" alt="带电流截止负反馈的闭环直流调速系统" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_07.png" alt="带电流截止负反馈的闭环直流调速系统" style="width:40%;">
 
-<img src="/img/Motion-control-system/extracted/img_08.png" alt="电流截止负反馈静特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_08.png" alt="电流截止负反馈静特性" style="width:40%;">
 
 截止电流为：
 
@@ -282,7 +282,7 @@ $$
 n=\frac{K_pK_sU_n^*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
 $$
 
-当 $I_d>I_{dcr}$ 时，电流截止负反馈投入，思维导图中手写公式可整理为：
+当 $I_d>I_{dcr}$ 时，电流截止负反馈投入：
 
 $$
 n=\frac{K_pK_s(U_n^*+U_{com})}{C_e(1+K)}-
@@ -351,7 +351,7 @@ $$
 
 典型 I 型系统结构为：
 
-<img src="/img/Motion-control-system/extracted/img_12.png" alt="典型 I 型系统" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_12.png" alt="典型 I 型系统" style="width:40%;">
 
 其闭环特征参数为：
 
@@ -391,7 +391,7 @@ $$
 
 典型 II 型系统结构为：
 
-<img src="/img/Motion-control-system/extracted/img_15.png" alt="典型 II 型系统" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_15.png" alt="典型 II 型系统" style="width:40%;">
 
 引入中频宽参数：
 
@@ -535,8 +535,7 @@ $$
 
 电流调节器模拟电路参数为：
 
-<img src="/img/Motion-control-system/extracted/img_25.png" alt="电流调节器电路" style="width:67%;">
-
+<img src="/img/Motion-control-system/extracted/img_25.png" alt="电流调节器电路" style="width:40%;">
 $$
 K_i=\frac{R_i}{R_0}
 $$
@@ -609,8 +608,7 @@ $$
 
 转速调节器模拟电路参数为：
 
-<img src="/img/Motion-control-system/extracted/img_28.png" alt="转速调节器电路" style="width:67%;">
-
+<img src="/img/Motion-control-system/extracted/img_28.png" alt="转速调节器电路" style="width:40%;">
 $$
 K_n=\frac{R_n}{R_0}
 $$
@@ -678,7 +676,7 @@ $$
 
 ### 静特性
 
-<img src="/img/Motion-control-system/extracted/img_33.png" alt="闭环控制变压调速系统静特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_33.png" alt="闭环控制变压调速系统静特性" style="width:50%;">
 
 变压调速系统的特点：
 
@@ -686,7 +684,7 @@ $$
 
 ### 动态模型
 
-<img src="/img/Motion-control-system/extracted/img_35.png" alt="异步电动机闭环变压调速系统动态结构" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_35.png" alt="异步电动机闭环变压调速系统动态结构" style="width:40%;">
 
 转速调节器：
 
@@ -740,7 +738,7 @@ $$
 
 变压变频调速系统的控制特性如下图所示，基频以下磁通不变，近似为恒转矩调速；基频以上$U_{sN}$不变，近似为恒功率调速。
 
-<img src="/img/Motion-control-system/extracted/img_37.png" alt="变压变频调速控制特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_37.png" alt="变压变频调速控制特性" style="width:50%;">
 
 ### 基频以下——恒压频比
 
@@ -752,7 +750,7 @@ $$
 
 低频时，定子电阻压降所占比例增大，因此简单保持 $U_s/w_1$ 恒定会导致磁通下降，需要进行低频电压补偿。
 
-<img src="/img/Motion-control-system/extracted/img_38.png" alt="恒压频比控制机械特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_38.png" alt="恒压频比控制机械特性" style="width:50%;">
 
 如果采用恒气隙电动势控制，则为：
 
@@ -760,7 +758,7 @@ $$
 \frac{E_g}{\omega_1}=\text{Const.}
 $$
 
-<img src="/img/Motion-control-system/extracted/img_39.png" alt="恒 $E_g/\omega_1$ 控制机械特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_39.png" alt="恒 $E_g/\omega_1$ 控制机械特性" style="width:50%;">
 
 ### 基频以上——恒压变频
 
@@ -770,7 +768,7 @@ $$
 U_s=\text{Const.},\qquad f_1>f_{1N}
 $$
 
-<img src="/img/Motion-control-system/extracted/img_40.png" alt="基频以上恒压变频机械特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_40.png" alt="基频以上恒压变频机械特性" style="width:50%;">
 
 ---
 
@@ -804,7 +802,7 @@ $$
 
 - 当 $T_e$ 达到最大值 $T_{emax}$ 时，转差频率达到：$\omega_s=\omega_{smax}$.
 
-<img src="/img/Motion-control-system/extracted/img_43.png" alt="恒电流控制时 $T_e=f(\omega_s)$ 特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_43.png" alt="恒电流控制时 $T_e=f(\omega_s)$ 特性" style="width:50%;">
 
 转差频率控制的规律是：
 
@@ -817,7 +815,7 @@ $$
 U_s=f(\omega_1,I_s)
 $$
 
-<img src="/img/Motion-control-system/extracted/img_44.png" alt="不同定子电流时的电压-频率特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_44.png" alt="不同定子电流时的电压-频率特性" style="width:40%;">
 
 ---
 
@@ -833,7 +831,7 @@ $$
 
 交-直-交变频器先把交流电整流成直流电，再由逆变器输出电压和频率可调的交流电。
 
-<img src="/img/Motion-control-system/extracted/img_46.png" alt="交-直-交 PWM 变压变频器" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_46.png" alt="交-直-交 PWM 变压变频器" style="width:50%;">
 
 交-直-交变压变频器的结构简单，稳态、动态性能较好，是现代变频调速系统中非常常见的形式。
 
@@ -841,7 +839,7 @@ $$
 
 交-交变频器不经过直流中间环节，直接把一种频率的交流电变换成另一种频率的交流电。
 
-<img src="/img/Motion-control-system/extracted/img_47.png" alt="交-交直接变压变频器" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_47.png" alt="交-交直接变压变频器" style="width:50%;">
 
 交-交变压变频器的输入功率因数低，最高输出频率一般不超过电网频率的 $1/3\sim1/2$，需要大量晶闸管，适合低速大容量调速场合。
 
@@ -1071,7 +1069,7 @@ $$
 
 ---
 
-  ## 下载
+  # 下载 
 
   <a href="/files/运控.pdf" download>点击下载运控思维导图pdf版</a>
 
