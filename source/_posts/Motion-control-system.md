@@ -144,7 +144,7 @@ $$
 
 ## 转速闭环控制的直流调速系统
 
-转速闭环系统加入测速反馈，把实际转速 $n$ 转换成反馈电压 $U_n$，与给定电压 $U_n^*$ 比较后形成偏差信号，再通过放大器和整流装置控制电枢电压。
+转速闭环系统加入测速反馈，把实际转速 $n$ 转换成反馈电压 $U_n$，与给定电压 $U_n^{*}$ 比较后形成偏差信号，再通过放大器和整流装置控制电枢电压。
 
 ### 调速指标
 
@@ -179,7 +179,7 @@ $$
 闭环静特性整理为：
 
 $$
-n=\frac{K_pK_sU_n^*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
+n=\frac{K_pK_sU_n^{*}}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
 $$
 
 即：
@@ -196,7 +196,7 @@ $$
 
 
 $$
-\alpha=\dfrac{KU_n^*}{(n+\Delta n_{cl})(1+K)}\text{(精确计算)} \quad \alpha=\dfrac{U_n^*}{n}\text{(近似计算)}
+\alpha=\dfrac{KU_n^{*}}{(n+\Delta n_{cl})(1+K)}\text{(精确计算)} \quad \alpha=\dfrac{U_n^{*}}{n}\text{(近似计算)}
 $$
 
 开环速降为：
@@ -261,7 +261,7 @@ $$
 堵转电流为：
 
 $$
-I_{dbl}=\frac{U_n^*+U_{com}}{R_s}
+I_{dbl}=\frac{U_n^\*+U_{com}}{R_s}
 $$
 
 常用经验范围为：
@@ -279,13 +279,13 @@ $$
 当 $I_d\le I_{dcr}$ 时，电流截止负反馈未投入：
 
 $$
-n=\frac{K_pK_sU_n^*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
+n=\frac{K_pK_sU_n^\*}{C_e(1+K)}-\frac{RI_d}{C_e(1+K)}
 $$
 
 当 $I_d>I_{dcr}$ 时，电流截止负反馈投入：
 
 $$
-n=\frac{K_pK_s(U_n^*+U_{com})}{C_e(1+K)}-
+n=\frac{K_pK_s(U_n^\*+U_{com})}{C_e(1+K)}-
 \frac{(K_pK_sR_s+R)I_d}{C_e(1+K)}
 $$
 
@@ -639,7 +639,7 @@ $$
 
 $$
 \sigma_n=2\left(\frac{\Delta C_{max}}{C_b}\right)(\lambda-z)
-\frac{\Delta n_NT_{\Sigma n}}{n^*T_m}
+\frac{\Delta n_NT_{\Sigma n}}{n^\*T_m}
 $$
 
 其中额定速降为：
@@ -672,7 +672,7 @@ $$
 
 改变定子电压时，异步电动机机械特性会发生变化。电压越低，最大电磁转矩越小，稳定运行范围也变窄。
 
-<img src="/img/Motion-control-system/extracted/img_32.png" alt="异步电动机不同电压下机械特性" style="width:67%;">
+<img src="/img/Motion-control-system/extracted/img_32.png" alt="异步电动机不同电压下机械特性" style="width:50%;">
 
 ### 静特性
 
@@ -684,7 +684,7 @@ $$
 
 ### 动态模型
 
-<img src="/img/Motion-control-system/extracted/img_35.png" alt="异步电动机闭环变压调速系统动态结构" style="width:40%;">
+<img src="/img/Motion-control-system/extracted/img_35.png" alt="异步电动机闭环变压调速系统动态结构" style="width:55%;">
 
 转速调节器：
 
@@ -768,7 +768,7 @@ $$
 U_s=\text{Const.},\qquad f_1>f_{1N}
 $$
 
-<img src="/img/Motion-control-system/extracted/img_40.png" alt="基频以上恒压变频机械特性" style="width:50%;">
+<img src="/img/Motion-control-system/extracted/img_40.png" alt="基频以上恒压变频机械特性" style="width:45%;">
 
 ---
 
@@ -831,7 +831,7 @@ $$
 
 交-直-交变频器先把交流电整流成直流电，再由逆变器输出电压和频率可调的交流电。
 
-<img src="/img/Motion-control-system/extracted/img_46.png" alt="交-直-交 PWM 变压变频器" style="width:50%;">
+<img src="/img/Motion-control-system/extracted/img_46.png" alt="交-直-交 PWM 变压变频器" style="width:60%;">
 
 交-直-交变压变频器的结构简单，稳态、动态性能较好，是现代变频调速系统中非常常见的形式。
 
@@ -961,7 +961,7 @@ I_{dcr}=\frac{U_{com}}{R_s}
 $$
 
 $$
-I_{dbl}=\frac{U_n^*+U_{com}}{R_s}
+I_{dbl}=\frac{U_n^\*+U_{com}}{R_s}
 $$
 
 $$
@@ -1038,7 +1038,7 @@ $$
 
 $$
 \sigma_n=2\left(\frac{\Delta C_{max}}{C_b}\right)(\lambda-z)
-\frac{\Delta n_NT_{\Sigma n}}{n^*T_m}
+\frac{\Delta n_NT_{\Sigma n}}{n^\*T_m}
 $$
 
 ## 交流调速
