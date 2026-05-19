@@ -82,7 +82,6 @@ $$
     <img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
     <img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
 </div>
-
 **复习要点**：
 
 - **标准轮**最重要，后续机动性、非完整约束、差动驱动都会用到。
