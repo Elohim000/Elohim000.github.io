@@ -76,11 +76,11 @@ $$
 | 瑞典轮 | 三个自由度：绕轮轴、辊子、触地点转动 | 可实现全向/麦克纳姆式运动 |
 | 球形轮 | 理论上全向，但悬挂和驱动实现复杂 | 工程上难度较高 |
 
-<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-<img src="/img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" style="width:20%;margin: 0 ;"/>
-<img src="/img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" style="width:20%;margin: 0 ;"/>
-<img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" style="width:20%;margin: 0 ;"/>
-<img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" style="width:20%;margin: 0 ;"/>
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+    <img src="/img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
+    <img src="/img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
+    <img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
+    <img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" style="width:23%; min-width:120px; margin:0; display:inline-block !important;" />
 </div>
 
 **复习要点**：
