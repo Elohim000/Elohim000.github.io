@@ -76,7 +76,9 @@ $$
 | 瑞典轮 | 三个自由度：绕轮轴、辊子、触地点转动 | 可实现全向/麦克纳姆式运动 |
 | 球形轮 | 理论上全向，但悬挂和驱动实现复杂 | 工程上难度较高 |
 
-![标准轮](/img/mobile_robotics/standard_wheel_diagram.png){width=23%} ![小脚轮](/img/mobile_robotics/caster_wheel_diagram.png){width=23%} ![瑞典轮](/img/mobile_robotics/swedish_wheel_diagram.png){width=23%} ![球形轮](/img/mobile_robotics/omnidirectional_wheel_top_view.png){width=23%}
+| ![标准轮](/img/mobile_robotics/standard_wheel_diagram.png) | ![小脚轮](/img/mobile_robotics/caster_wheel_diagram.png) | ![瑞典轮](/img/mobile_robotics/swedish_wheel_diagram.png) | ![球形轮](/img/mobile_robotics/omnidirectional_wheel_top_view.png) |
+|:--:|:--:|:--:|:--:|
+| 标准轮 | 小脚轮 | 瑞典轮 | 球形轮 |
 **复习要点**：
 
 - **标准轮**最重要，后续机动性、非完整约束、差动驱动都会用到。
