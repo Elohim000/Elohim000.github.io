@@ -77,10 +77,10 @@ $$
 | 球形轮 | 理论上全向，但悬挂和驱动实现复杂 | 工程上难度较高 |
 
 <div style="display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:10px;">
-<img src="/img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" width="20%"/>
-<img src="/img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" width="20%"/>
-<img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" width="20%"/>
-<img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" width="20%"/>
+<img src="/img/mobile_robotics/standard_wheel_diagram.png" alt="标准轮示意图" style="max-width:20%;height:auto;"/>
+<img src="/img/mobile_robotics/caster_wheel_diagram.png" alt="小脚轮示意图" style="max-width:20%;height:auto;"/>
+<img src="/img/mobile_robotics/swedish_wheel_diagram.png" alt="瑞典轮示意图" style="max-width:20%;height:auto;"/>
+<img src="/img/mobile_robotics/omnidirectional_wheel_top_view.png" alt="球形轮示意图" style="max-width:20%;height:auto;"/>
 </div>
 
 
