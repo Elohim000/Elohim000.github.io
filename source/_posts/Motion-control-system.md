@@ -160,7 +160,7 @@ $$
 s=\frac{\Delta n}{n_0}
 $$
 
-一般给出的$s$为静差率上限，即$n_0=n_{min}+\Delta n_N$，则可推导出如下三个常用公式：
+一般给出的$s$为静差率上限，即$$n_0=n_{min}+\Delta n_N$$，则可推导出如下三个常用公式：
 $$
 s=\dfrac{D\Delta n_N}{n_N+D\Delta n_N}\qquad
 n_{min}=\dfrac{(1-s)\Delta n_N}{s}\qquad

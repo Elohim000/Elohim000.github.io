@@ -87,9 +87,10 @@ ignore:
 # Extensions
 theme: butterfly
 
-# Math pre-processor: protects $$ from markdown parser
-math:
-  engine: mathjax
+# Pandoc markdown renderer with native math support
+pandoc:
+  args:
+    - '--mathjax'
 
 # MathJax LaTeX support
 mathjax:
