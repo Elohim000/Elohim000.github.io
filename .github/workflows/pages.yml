@@ -27,6 +27,12 @@ jobs:
           node-version: "20"
           cache: npm
 
+      - name: Install Pandoc
+        run: |
+          curl -sL https://github.com/jgm/pandoc/releases/download/3.6.4/pandoc-3.6.4-linux-amd64.tar.gz -o pandoc.tar.gz
+          tar xzf pandoc.tar.gz
+          sudo mv pandoc-3.6.4/bin/pandoc /usr/local/bin/
+
       - name: Install dependencies
         run: npm ci
 
