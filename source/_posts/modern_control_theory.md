@@ -11,6 +11,7 @@ cover: /img/modern_control_theory/现代控制理论.png
 mathjax: true
 ---
 
+---
 # 现代控制理论复习思维导图
 
 ##复习主线
