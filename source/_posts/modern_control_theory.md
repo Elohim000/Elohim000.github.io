@@ -7,7 +7,7 @@ tags:
   - 笔记
   - 现代控制理论
 description: 分享我复习时做的现代控制理论系统思维导图。
-cover: /img/modern_control_theory_mindmap/现代控制理论.png
+cover: /img/modern_control_theory/现代控制理论.png
 mathjax: true
 ---
 
