@@ -187,7 +187,7 @@ $$
 
 可画出结构图如下图所示：
 
-<img src="img/modern_control_theory/jiegou1.png" alt="jiegou1" style="zoom: 35%;" />
+<img src="/img/modern_control_theory/jiegou1.png" alt="jiegou1" style="zoom: 35%;" />
 
 对于不存在零点的形式：
 $$
@@ -195,7 +195,7 @@ G (s) = \frac{Y (s)}{U (s)} = \frac{k}{s + p}
 $$
 可画出结构图如下图所示：
 
-<img src="img/modern_control_theory/jiegou2.png" alt="jiegou2" style="zoom:35%;" />
+<img src="/img/modern_control_theory/jiegou2.png" alt="jiegou2" style="zoom:35%;" />
 
 #### 并联分解（重根或高阶极点）
 
@@ -1200,7 +1200,7 @@ y=(C-DK)x+Dv
 \end{cases}
 $$
 
-<img src="img/modern_control_theory/state_feedback_block_diagram.png" alt="状态反馈结构图" width="35%" />
+<img src="/img/modern_control_theory/state_feedback_block_diagram.png" alt="状态反馈结构图" width="35%" />
 
 #### 直接求解法
 
@@ -1269,7 +1269,7 @@ $$
 
 全维状态观测器结构为：
 
-<img src="img/modern_control_theory/state_observer_block_diagram.png" alt="全维状态观测器结构图" width="50%" />
+<img src="/img/modern_control_theory/state_observer_block_diagram.png" alt="全维状态观测器结构图" width="50%" />
 
 其状态方程为：
 
@@ -1356,7 +1356,7 @@ $$
 
 带状态反馈的全维状态观测器结构如下：
 
-<img src="img/modern_control_theory/full_state_feedback_observer_diagram.png" alt="加入状态反馈的全维状态观测器结构图" width="50%" />
+<img src="/img/modern_control_theory/full_state_feedback_observer_diagram.png" alt="加入状态反馈的全维状态观测器结构图" width="50%" />
 
 结论：传递函数阵和状态反馈部分相同，与观测器无关；用观测器的估计状态进行反馈，不影响系统的输入输出特性。
 
