@@ -184,7 +184,7 @@ preloader:
 
 # Background effects
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 100
   alpha: 0.6
   zIndex: -1
@@ -216,6 +216,14 @@ snackbar:
   bg_light: '#49b1f5'
   bg_dark: '#1f1f1f'
 
+# ---------- Lazyload ----------
+lazyload:
+  enable: true
+  native: true
+  field: site
+  placeholder:
+  blur: false
+
 # ---------- Other Plugins ----------
 # Word count / Reading time
 wordcount:
@@ -226,6 +234,7 @@ wordcount:
 # ---------- Inject custom CSS/JS ----------
 inject:
   head:
+    - '<link rel="stylesheet" href="/css/performance-style.css">'
     - '<script src="/js/typed.umd.js"></script>'
     - |
       <style>

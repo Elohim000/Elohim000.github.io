@@ -7,7 +7,7 @@ tags:
   - 笔记
   - 移动机器人
 description: 分享我复习时做的移动机器人系统思维导图。
-cover: /img/mobile_robotics/移动机器人.png
+cover: /img/mobile_robotics/cover-thumb.webp
 mathjax: true
 ---
 
