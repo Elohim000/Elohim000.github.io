@@ -796,4 +796,4 @@ RRT 是基于随机采样的路径规划方法。
 
 # 下载
 
-<a href="/files/移动机器热.pdf" download>点击下载原文件</a>
+<a href="/files/移动机器人.pdf" download>点击下载原文件</a>
