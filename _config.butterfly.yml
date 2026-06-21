@@ -179,7 +179,7 @@ local_search:
 # ---------- Beautify (花哨特效) ----------
 # Loading animation
 preloader:
-  enable: true
+  enable: false
   source: 1 # 1: pace.js progress bar, 2: loading screen with % counter
 
 # Background effects
