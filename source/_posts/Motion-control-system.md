@@ -8,6 +8,7 @@ tags:
   - 运控
 description: 分享我复习时做的运动控制系统思维导图。
 cover: /img/Motion-control-system/cover-thumb.webp
+top_img: /img/Motion-control-system/运控_top.jpg
 mathjax: true
 photos:
   -

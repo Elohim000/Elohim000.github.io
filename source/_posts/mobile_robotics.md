@@ -8,6 +8,7 @@ tags:
   - 移动机器人
 description: 分享我复习时做的移动机器人系统思维导图。
 cover: /img/mobile_robotics/cover-thumb.webp
+top_img: /img/mobile_robotics/移动机器人_top.jpg
 mathjax: true
 ---
 

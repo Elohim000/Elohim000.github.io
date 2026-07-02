@@ -8,6 +8,7 @@ tags:
   - 现代控制理论
 description: 分享我复习时做的现代控制理论系统思维导图。
 cover: /img/modern_control_theory/cover-thumb.webp
+top_img: /img/modern_control_theory/现代控制理论_top.jpg
 mathjax: true
 ---
 
