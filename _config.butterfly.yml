@@ -42,12 +42,12 @@ avatar:
 disable_top_img: false
 
 # ---------- Index Page ----------
-index_top_img: /img/beijing2.jpg
+index_img: /img/wallpapers/cover-sea.png
 index_top_img_height: 100vh
 index_site_info_top: Elohim的小屋
 
 # ---------- Top Image for Pages ----------
-default_top_img: /img/beijing2.jpg
+default_top_img: /img/wallpapers/cover-sea.png
 
 # ---------- Post Settings ----------
 post_meta:

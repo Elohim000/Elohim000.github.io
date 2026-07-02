@@ -7,15 +7,60 @@
   --el-shadow-hover: 0 18px 42px rgba(45, 55, 72, 0.14);
   --el-accent: #79b8c8;
   --el-soft: #f7fbfc;
+  --el-font-ui: "Noto Sans SC", "Noto Sans CJK SC", "Source Han Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --el-font-reading: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --el-font-code: "Cascadia Code", "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --global-font-size: 16px;
+  --global-font-family: var(--el-font-ui);
+  --font-family: var(--el-font-ui);
+}
+
+html {
+  background: #f6fafb;
 }
 
 body {
   color: var(--el-text);
-  background-color: #f7f9fb;
+  background-color: #f6fafb;
+  background-image:
+    linear-gradient(135deg, rgba(139, 211, 221, 0.22) 0%, rgba(139, 211, 221, 0) 34%),
+    linear-gradient(225deg, rgba(255, 238, 196, 0.28) 0%, rgba(255, 238, 196, 0) 32%),
+    repeating-linear-gradient(0deg, rgba(45, 55, 72, 0.026) 0, rgba(45, 55, 72, 0.026) 1px, transparent 1px, transparent 36px),
+    repeating-linear-gradient(90deg, rgba(45, 55, 72, 0.022) 0, rgba(45, 55, 72, 0.022) 1px, transparent 1px, transparent 36px),
+    linear-gradient(180deg, #fbfdfe 0%, #eef7f8 58%, #fffaf1 100%);
+  background-attachment: fixed;
+  font-family: var(--el-font-ui);
+  font-size: 16px;
+  line-height: 1.82;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--el-font-ui);
+}
+
+#web_bg {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.72) 34rem),
+    linear-gradient(135deg, rgba(139, 211, 221, 0.12), rgba(255, 238, 196, 0.10)) !important;
 }
 
 #body-wrap {
   background: transparent;
+}
+
+#page-header.full_page {
+  background-position: center center !important;
+}
+
+#page-header::before {
+  background: rgba(30, 42, 56, 0.22) !important;
 }
 
 #nav {
@@ -34,6 +79,32 @@ body {
 #nav.show #site-name,
 #nav.not-top-img #site-name {
   color: var(--el-text) !important;
+}
+
+#site-title {
+  font-family: var(--el-font-reading);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-shadow: 0 10px 30px rgba(31, 41, 55, 0.22) !important;
+}
+
+#subtitle,
+#site-subtitle {
+  font-family: var(--el-font-ui);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-shadow: 0 6px 18px rgba(31, 41, 55, 0.20) !important;
+}
+
+#nav,
+#recent-posts,
+#aside-content,
+#post,
+#page,
+#archive,
+#tag,
+#category {
+  font-family: var(--el-font-ui);
 }
 
 #recent-posts > .recent-post-item,
@@ -73,12 +144,16 @@ body {
 
 #recent-posts .article-title {
   color: var(--el-text) !important;
+  font-family: var(--el-font-reading);
+  font-weight: 700;
   line-height: 1.45;
+  letter-spacing: 0;
 }
 
 #recent-posts .content {
   color: var(--el-muted);
-  line-height: 1.8;
+  line-height: 1.75;
+  letter-spacing: 0;
 }
 
 .article-meta-wrap,
@@ -118,15 +193,35 @@ body {
 }
 
 #article-container {
-  line-height: 1.9;
+  color: #26323f;
+  font-family: var(--el-font-reading);
+  font-size: 1.04rem;
+  line-height: 2.05;
+  letter-spacing: 0;
+}
+
+#article-container p,
+#article-container li {
+  letter-spacing: 0;
+}
+
+#article-container p {
+  margin: 0 0 1.05em;
 }
 
 #article-container h1,
 #article-container h2,
 #article-container h3,
 #article-container h4 {
-  color: #263241;
+  color: #202c38;
+  font-family: var(--el-font-reading);
+  font-weight: 700;
   letter-spacing: 0;
+  line-height: 1.35;
+}
+
+#article-container strong {
+  color: #1f2f3f;
 }
 
 #article-container h2::before,
@@ -153,6 +248,7 @@ body {
 #article-container figure.highlight,
 #article-container pre,
 #article-container .highlight {
+  font-family: var(--el-font-code);
   border-radius: 12px !important;
 }
 
@@ -164,6 +260,24 @@ body {
   border-radius: 12px !important;
   background: #f8fbfc !important;
   box-shadow: none !important;
+}
+
+#footer {
+  color: #5f7282 !important;
+  background:
+    linear-gradient(180deg, rgba(246, 250, 251, 0), rgba(226, 240, 242, 0.86) 34%, rgba(255, 250, 241, 0.94) 100%),
+    linear-gradient(135deg, rgba(139, 211, 221, 0.18), rgba(255, 238, 196, 0.18)) !important;
+  box-shadow: inset 0 18px 36px rgba(45, 55, 72, 0.045);
+}
+
+#footer::before {
+  background: transparent !important;
+}
+
+#footer a,
+#footer .footer_custom_text,
+#footer .copyright {
+  color: #5f7282 !important;
 }
 
 @media (max-width: 768px) {
