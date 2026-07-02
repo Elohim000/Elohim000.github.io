@@ -3,7 +3,7 @@ title: 关于
 date: 2026-05-16
 type: about
 description: 关于本站与作者
-top_img: /img/wallpapers/cover-sea.png
+top_img: /img/wallpapers/cover-sea.jpg
 aside: true
 comments: false
 ---
