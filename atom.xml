@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Elohim000</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://elohim000.github.io/</id>
+  <link href="https://elohim000.github.io/" rel="alternate"/>
+  <link href="https://elohim000.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Elohim000</rights>
+  <subtitle>即使没有太阳，我的心中依旧天光乍现。</subtitle>
+  <title>Elohim的小屋</title>
+  <updated>2026-09-06T13:16:53.933Z</updated>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="随笔" scheme="https://elohim000.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://elohim000.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <id>https://elohim000.github.io/2026/08/31/%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E4%BA%8B%E7%89%A9/</id>
+    <link href="https://elohim000.github.io/2026/08/31/%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E4%BA%8B%E7%89%A9/"/>
+    <published>2026-08-31T14:39:00.000Z</published>
+    <summary>从六月期末考完，到八月最后一天，我再也无法逃避焦虑。</summary>
+    <title>悬而未决的事物</title>
+    <updated>2026-09-06T13:16:53.933Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="笔记" scheme="https://elohim000.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://elohim000.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="现代控制理论" scheme="https://elohim000.github.io/tags/%E7%8E%B0%E4%BB%A3%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/"/>
+    <id>https://elohim000.github.io/2026/05/31/modern_control_theory/</id>
+    <link href="https://elohim000.github.io/2026/05/31/modern_control_theory/"/>
+    <published>2026-05-31T16:00:00.000Z</published>
+    <summary>分享我复习时做的现代控制理论系统思维导图。</summary>
+    <title>现代控制理论复习思维导图</title>
+    <updated>2026-05-31T16:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="笔记" scheme="https://elohim000.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://elohim000.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="大学物理" scheme="https://elohim000.github.io/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/"/>
+    <id>https://elohim000.github.io/2026/05/31/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A/</id>
+    <link href="https://elohim000.github.io/2026/05/31/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A/"/>
+    <published>2026-05-31T16:00:00.000Z</published>
+    <summary>整理我的大学物理上的学习笔记</summary>
+    <title>大学物理上</title>
+    <updated>2026-06-04T16:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="笔记" scheme="https://elohim000.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://elohim000.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="运控" scheme="https://elohim000.github.io/tags/%E8%BF%90%E6%8E%A7/"/>
+    <id>https://elohim000.github.io/2026/05/17/Motion-control-system/</id>
+    <link href="https://elohim000.github.io/2026/05/17/Motion-control-system/"/>
+    <published>2026-05-17T16:00:00.000Z</published>
+    <summary>分享我复习时做的运动控制系统思维导图。</summary>
+    <title>运动控制系统复习思维导图</title>
+    <updated>2026-05-17T16:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="笔记" scheme="https://elohim000.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://elohim000.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    <category term="移动机器人" scheme="https://elohim000.github.io/tags/%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    <id>https://elohim000.github.io/2026/05/17/mobile_robotics/</id>
+    <link href="https://elohim000.github.io/2026/05/17/mobile_robotics/"/>
+    <published>2026-05-17T16:00:00.000Z</published>
+    <summary>分享我复习时做的移动机器人系统思维导图。</summary>
+    <title>移动机器人复习思维导图</title>
+    <updated>2026-05-18T16:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Elohim000</name>
+    </author>
+    <category term="随笔" scheme="https://elohim000.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="随笔" scheme="https://elohim000.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    <category term="博客" scheme="https://elohim000.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://elohim000.github.io/2026/05/15/my-first-post/</id>
+    <link href="https://elohim000.github.io/2026/05/15/my-first-post/"/>
+    <published>2026-05-15T16:00:00.000Z</published>
+    <summary>这是我的第一篇博客文章，记录建站的初衷与规划。</summary>
+    <title>欢迎来到我的个人网站</title>
+    <updated>2026-05-15T16:00:00.000Z</updated>
+  </entry>
+</feed>

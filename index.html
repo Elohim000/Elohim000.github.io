@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Elohim的小屋 - 即使没有太阳，我的心中依旧天光乍现。</title><meta name="author" content="Elohim000"><meta name="copyright" content="Elohim000"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="个人学习笔记与文章分享">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elohim的小屋">
+<meta property="og:url" content="https://elohim000.github.io/index.html">
+<meta property="og:site_name" content="Elohim的小屋">
+<meta property="og:description" content="个人学习笔记与文章分享">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://elohim000.github.io/img/touxiang.jpg">
+<meta property="article:author" content="Elohim000">
+<meta property="article:tag" content="技术,笔记,学习,编程">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://elohim000.github.io/img/touxiang.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Elohim的小屋",
+  "alternateName": [
+    "即使没有太阳，我的心中依旧天光乍现。",
+    "elohim000.github.io"
+  ],
+  "url": "https://elohim000.github.io/"
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://elohim000.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.5"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Elohim的小屋',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/performance-style.css"><script src="/js/typed.umd.js"></script><style>
+#page-header #site-info {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+</style>
+<meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="Elohim的小屋" type="application/atom+xml">
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(/img/wallpapers/cover-sea.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Elohim的小屋</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Elohim的小屋</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Elohim000" target="_blank" title="GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1933463088@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/08/31/%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E4%BA%8B%E7%89%A9/" title="悬而未决的事物">悬而未决的事物</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-08-31T14:39:00.000Z" title="发表于 2026-08-31 22:39:00">2026-08-31</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-06T13:16:53.933Z" title="更新于 2026-09-06 21:16:53">2026-09-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">六月底，期末一考完，一股紧迫感便毫无来由地压了下来，好像再不联系老师、再不去写简历，就要错过什么似的。我匆匆赶出一版简历，写到一半才发觉：自己上了三年学，竟没有一件拿得出手的成绩。为了竞赛加分，我努力了两年，到头来却没有一个国奖；做过的项目，不过是一堆课程设计，撑不起任何像样的能力。我不禁问自己：真的要读研吗？ 我无疑是想读的。我还从没进过实验室，没有拥有过一张属于自己的工位。我想随大流地读一次研，去看看往后或许再也见不着的风景。可是对我这样一个并不出色的学生来说，光是够到那张保研资格的门票，就已让我手忙脚乱。没有国奖，我只能去刷课程成绩，去想法子抬高那点微不足道的德育分。每当想到这些努力或许终究换不来一个名额，我便被一阵深深的焦虑缠住。那么，要是不读研，我又能去做什么呢？ 身边的人都去考研了，他们劝我一起。可三年的时光，早已磨掉了我所有锐气，我不再是高三时那个我了。大三的我，不敢去面对那场要准备小半年的考试，一直往后退，再往后退。我怕结果不如我所愿，我怕我担不起二战那份重压，家里的条件并不好，我没有失败的机会。如果保不上研，我就得尽快找份工作，我想。 于是我对别人说，我要去工作...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2026/05/31/modern_control_theory/" title="现代控制理论复习思维导图"><img class="post-bg" src="/img/modern_control_theory/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="现代控制理论复习思维导图" loading='lazy'></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/31/modern_control_theory/" title="现代控制理论复习思维导图">现代控制理论复习思维导图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-31T16:00:00.000Z" title="发表于 2026-06-01 00:00:00">2026-06-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-31T16:00:00.000Z" title="更新于 2026-06-01 00:00:00">2026-06-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%8E%B0%E4%BB%A3%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/">现代控制理论</a></span></div><div class="content">现代控制理论复习思维导图 复习主线  现控的复习主要分为两部分，一是以控制系统能控能观为考察点的状态空间和具体能控能观分析 二是由李雅普诺夫稳定性和状态反馈、状态观测器以及最优控制、估计为主的系统整体分析  状态空间模型 状态空间模型的基本形式为：  其中， 为状态向量， 为输入向量， 为输出向量； 为系统矩阵， 为输入矩阵， 为输出矩阵， 为直接传递矩阵。 由物理机理建立动态方程 状态变量个数等于系统中独立储能元件的个数。建模时先根据物理定律列动态方程，再选取能完整描述系统能量状态的变量作为状态变量。 由微分方程建立动态方程 不含输入的导数项 设系统微分方程为：  取状态变量：  则有：   注：第一能观标准型（对偶于第一能控标准型）。 包含输入的导数项 设系统微分方程含有输入及其导数项：  可写成矩阵形式：   若 ，则 ，，输入导数项引入的影响只体现在  中。 注：第二能观标准型（对偶于第二能控标准型）。 由传递函数建立动态方程 状态空间模型与传递函数之间满足：  直接分解 设传递函数为：  写成矩阵形式有：   注：第二能控标准型（对偶于第一能观标准型）。 并联分解（互异...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/05/31/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A/" title="大学物理上">大学物理上</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-31T16:00:00.000Z" title="发表于 2026-06-01 00:00:00">2026-06-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-06-04T16:00:00.000Z" title="更新于 2026-06-05 00:00:00">2026-06-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</a></span></div><div class="content"> 关于大物   这份笔记最早是我高中第一次接触到物理竞赛时开始做的，虽然最后并没有拿到足够好的成绩，但是提前接触的物理思维与方法对我后来在物理方面的学习有着诸多益处，到了大学之后发现大物课上老师讲的大部分知识点都已经学过，于是就把剩余的大物笔记也添加进了这份笔记里，所以下面的内容可能有很多其实并不涉及大物，而是还在高中物理的范畴内，现在把这份笔记全部整理成电子版，以供我未来回头看时还能想起高中的美好时光。  质点运动学 质点的位置、速度、加速度确定 位矢  速度  加速度  前者为切向加速度，后者为法向加速度 角量与线量关系：  eg. 纯滚动物点速度 求下图所示点M的速度    不同参考系的速度和加速度 绝对速度=相对速度+牵连速度 绝对加速度=相对加速度+牵连加速度 eg. 交叉杆状物点速度 求如图所示杆状交叉物点的速度  线状相交物系交叉点的速度是相交双方沿对方切向运动分速度的矢量和，即  这一结论既可以通过单独分析一个杆的运动得出，也可以通过如图所示的微元法得到。 牛顿运动定律 质点系牛顿第二定律：  惯性力： 若参考系为非惯性系，即参考系本身具有加速度，则研究对象会等效...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2026/05/17/Motion-control-system/" title="运动控制系统复习思维导图"><img class="post-bg" src="/img/Motion-control-system/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="运动控制系统复习思维导图" loading='lazy'></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/17/Motion-control-system/" title="运动控制系统复习思维导图">运动控制系统复习思维导图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-17T16:00:00.000Z" title="发表于 2026-05-18 00:00:00">2026-05-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-17T16:00:00.000Z" title="更新于 2026-05-18 00:00:00">2026-05-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%BF%90%E6%8E%A7/">运控</a></span></div><div class="content">运动控制系统思维导图  总体复习脉络 这张思维导图可以按两条主线复习。 第一条是直流调速系统： 系统基础转速开环转速闭环电流截止负反馈转速、电流双闭环系统校正双闭环调节器工程设计 第二条是交流调速系统： 异步电动机变压调速变压变频调速转差频率控制电力电子变频器 复习时要把握三个层次：  结构层：系统由哪些环节组成，例如功率变换器、电动机、反馈环节、调节器。  公式层：机械特性、静差率、闭环速降、典型系统、调节器参数。  设计层：先确定指标，再选典型系统，再计算调节器参数，最后校验近似条件和超调量。   直流部分 V-M 系统 V-M 系统指晶闸管可控整流器—直流电动机调速系统。它的核心思路是：通过改变晶闸管触发角 ，改变整流输出电压 ，再改变直流电动机电枢电压，从而调节电机转速。  可控整流输出电压 V-M 系统主电路公式为：  其中：  ：整流装置输出的平均直流电压； ：整流变压器二次侧相电压或等效交流输入电压； ：晶闸管触发角。  复习时只要记住：增大触发角 ，减小，所以输出电压 减小，电机转速降低。 V-M 系统机械特性  V-M 系统动态结构 晶闸管触发和整流装置存在滞后...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2026/05/17/mobile_robotics/" title="移动机器人复习思维导图"><img class="post-bg" src="/img/mobile_robotics/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动机器人复习思维导图" loading='lazy'></a></div><div class="recent-post-info"><a class="article-title" href="/2026/05/17/mobile_robotics/" title="移动机器人复习思维导图">移动机器人复习思维导图</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-17T16:00:00.000Z" title="发表于 2026-05-18 00:00:00">2026-05-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-18T16:00:00.000Z" title="更新于 2026-05-19 00:00:00">2026-05-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/">移动机器人</a></span></div><div class="content">移动机器人课程复习思维导图  复习主线 移动机器人课程可按三条主线复习：  运动：腿式结构、轮式移动机构、运动学、机动性、工作空间。 感知：传感器分类、编码器、GPS、双目视觉、相机标定、图像处理。 定位与导航：信任度、马尔可夫定位、路径规划、避障。   运动 腿的构造与稳定 自由度  一条腿至少需要 2 个自由度，才能完成向前移动。 多数情况下，每条腿约 3 个自由度。 常见关节角示例：  髋部外展角度： 髋部弯曲角： 膝盖弯曲角：    步态  步态：由“抬起”和“放下”各条腿的事件序列描述。 对于  条腿的机器人，可能的步态数可记为：    例：   复习要点：  腿式机器人复习时先抓住两个词：自由度与步态。 自由度决定单条腿“能不能动起来”；步态决定多条腿“如何协同动起来”。   轮式移动机器人 四种基本轮形         轮形 自由度/特征 复习重点     标准轮 两个自由度：绕轮轴转动、触地点转动 常用于差动驱动、同步驱动等结构   小脚轮 三个自由度：绕轮轴、触地点、脚轮轴旋转 常作随动/支撑轮，不一定计入可操纵度   瑞典轮 三个自由度：绕轮轴、辊子、触地点转...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2026/05/15/my-first-post/" title="欢迎来到我的个人网站">欢迎来到我的个人网站</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-15T16:00:00.000Z" title="发表于 2026-05-16 00:00:00">2026-05-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-05-15T16:00:00.000Z" title="更新于 2026-05-16 00:00:00">2026-05-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">建站初衷 一直想有一个属于自己的角落，用来记录学习过程中的点滴。无论是复习笔记、技术踩坑，还是阅读感悟，都可以沉淀在这里。  学而时习之，不亦说乎。 —— 《论语》  网站内容规划 📖 复习笔记 整理各科目的知识体系，方便随时回顾。笔记会以清晰的结构呈现，配合代码示例和图解。 ✍️ 技术文章 分享编程学习过程中的经验与思考，涵盖前端、后端、工具链等方面。 📚 阅读杂记 记录读书笔记和随感，包括技术书籍和非技术类读物。 技术栈 本站使用 Hexo 静态博客框架搭建，采用 Butterfly 主题，部署在 GitHub Pages 上。  框架: Hexo 5.x 主题: Butterfly 托管: GitHub Pages 评论: 待接入  联系方式  GitHub: Elohim000 Email: 1933463088@qq.com  欢迎常来逛！ </div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">Elohim000</div><div class="author-info-description">终身学习者 / 编程爱好者</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Elohim000"><i class="fab fa-github"></i><span>GitHub</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Elohim000" target="_blank" title="GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1933463088@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的个人网站，这里记录了我无聊的大三生活</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/08/31/%E6%82%AC%E8%80%8C%E6%9C%AA%E5%86%B3%E7%9A%84%E4%BA%8B%E7%89%A9/" title="悬而未决的事物">悬而未决的事物</a><time datetime="2026-08-31T14:39:00.000Z" title="发表于 2026-08-31 22:39:00">2026-08-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/31/modern_control_theory/" title="现代控制理论复习思维导图"><img src="/img/modern_control_theory/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="现代控制理论复习思维导图"/ loading='lazy'></a><div class="content"><a class="title" href="/2026/05/31/modern_control_theory/" title="现代控制理论复习思维导图">现代控制理论复习思维导图</a><time datetime="2026-05-31T16:00:00.000Z" title="发表于 2026-06-01 00:00:00">2026-06-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/05/31/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E4%B8%8A/" title="大学物理上">大学物理上</a><time datetime="2026-05-31T16:00:00.000Z" title="发表于 2026-06-01 00:00:00">2026-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/17/Motion-control-system/" title="运动控制系统复习思维导图"><img src="/img/Motion-control-system/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="运动控制系统复习思维导图"/ loading='lazy'></a><div class="content"><a class="title" href="/2026/05/17/Motion-control-system/" title="运动控制系统复习思维导图">运动控制系统复习思维导图</a><time datetime="2026-05-17T16:00:00.000Z" title="发表于 2026-05-18 00:00:00">2026-05-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/05/17/mobile_robotics/" title="移动机器人复习思维导图"><img src="/img/mobile_robotics/cover-thumb.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="移动机器人复习思维导图"/ loading='lazy'></a><div class="content"><a class="title" href="/2026/05/17/mobile_robotics/" title="移动机器人复习思维导图">移动机器人复习思维导图</a><time datetime="2026-05-17T16:00:00.000Z" title="发表于 2026-05-18 00:00:00">2026-05-18</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">笔记</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">2</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA/" style="font-size: 1.1em; color: #999">移动机器人</a> <a href="/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" style="font-size: 1.1em; color: #999">大学物理</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 1.3em; color: #99a1ac">随笔</a> <a href="/tags/%E7%8E%B0%E4%BB%A3%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/" style="font-size: 1.1em; color: #999">现代控制理论</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.5em; color: #99a9bf">笔记</a> <a href="/tags/%E8%BF%90%E6%8E%A7/" style="font-size: 1.1em; color: #999">运控</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/08/">
+            <span class="card-archive-list-date">
+              八月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/06/">
+            <span class="card-archive-list-date">
+              六月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/05/">
+            <span class="card-archive-list-date">
+              五月 2026
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">21k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-06T13:17:12.634Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Elohim000</span></div><div class="footer_custom_text">学无止境，日拱一卒。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.5"></script><script src="/js/main.js?v=5.5.5"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (false) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (false) {
+      const sub = [].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script></div><script>
+document.addEventListener('DOMContentLoaded', function() {
+  var el = document.getElementById('subtitle');
+  if (!el || typeof Typed === 'undefined') return;
+  new Typed('#subtitle', {
+    strings: ['即使没有太阳，我的心中依旧天光乍现。', '卷，都卷，卷点好啊/(ㄒoㄒ)/~~'],
+    typeSpeed: 120,
+    backSpeed: 80,
+    startDelay: 500,
+    backDelay: 3000,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|'
+  });
+});
+</script>
+<script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
